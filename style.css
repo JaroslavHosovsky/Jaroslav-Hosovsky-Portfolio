@@ -56,6 +56,7 @@ html {
   text-decoration: none;
   color: #061e4c;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .hover-effect::after {
@@ -122,10 +123,18 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .header-wrapper span {
   color: #061e4c;
   font-weight: 600;
 }
+
+.header-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .header-wrapper button {
   padding: 7px 12px;
   margin-top: 25px;
@@ -158,6 +167,38 @@ header {
 }
 
 /* Header section - konec */
+
+/* About me section - začátek */
+
+.about-me-container {
+  width: 85%;
+  margin: 50px auto 120px auto;
+  position: relative;
+}
+
+.about-me-container img {
+  width: 175px;
+  height: auto;
+  position: absolute;
+  bottom: -68px;
+  right: -25px;
+  /* border-radius: 50%; */
+}
+
+.about-me-text-wrapper {
+  background-color: #348de2;
+  color: #fff;
+  padding: 25px 15px 85px 15px;
+  border-radius: 15px;
+}
+
+.about-me-container h1 {
+  color: #061e4c;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* About me section - konec */
 
 /* Technology section - začátek */
 .technology-wrapper {
@@ -390,6 +431,37 @@ header {
 
 /* Header image - konec */
 
+/* About me image - začátek */
+@media only screen and (min-width: 347px) {
+  .about-me-container img {
+    bottom: -103px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .about-me-container img {
+    bottom: -93px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .about-me-container img {
+    width: 240px;
+    right: 45px !important;
+    top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about-me-container img {
+    width: 240px;
+    right: 70px !important;
+    top: 30px;
+  }
+}
+
+/* About me image - konec */
+
 @media only screen and (min-width: 768px) {
   /* Header section - začátek */
 
@@ -410,6 +482,32 @@ header {
   }
 
   /* Header section - konec */
+
+  /* About me section - začátek */
+
+  @media only screen and (min-width: 768px) {
+    .about-me-container {
+      width: 75%;
+    }
+
+    .about-me-text-wrapper {
+      padding: 35px;
+      height: 300px;
+    }
+
+    .about-me-container img {
+      width: 200px;
+      right: 10px;
+      top: 75px;
+    }
+
+    .about-me-text-wrapper p {
+      width: 70%;
+      line-height: 22px;
+    }
+  }
+
+  /* About me section - konec */
 
   /* Technology section - začátek */
 
@@ -526,6 +624,31 @@ header {
 
   /* Header section - konec */
 
+  /* About me section - začátek */
+
+  @media only screen and (min-width: 1024px) {
+    .about-me-container {
+      width: 70%;
+    }
+
+    .about-me-container img {
+      width: 240px;
+      right: 10px;
+      top: 30px;
+    }
+
+    .about-me-text-wrapper {
+      padding: 35px;
+      height: 300px;
+    }
+
+    .about-me-text-wrapper p {
+      line-height: 24px;
+    }
+  }
+
+  /* About me section - konec */
+
   /* Technology section - začátek */
 
   .technology-wrapper {
@@ -637,4 +760,12 @@ header {
   }
 
   /* Contact section - konec */
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-me-text-wrapper p {
+    width: 70%;
+    line-height: 28px;
+    font-size: 20px;
+  }
 }
