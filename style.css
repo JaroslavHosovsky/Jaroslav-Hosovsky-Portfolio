@@ -561,6 +561,7 @@ header {
     margin: 0;
     font-size: 24px;
     max-width: 230px;
+    height: 130px;
   }
   /* Project section - konec */
 
@@ -727,6 +728,7 @@ header {
   .single-project h1 {
     font-size: 18px;
     max-width: 152px;
+    height: 110px;
   }
 
   .single-project p {
