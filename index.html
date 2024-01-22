@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jaroslav Hošovský</title>
+  </head>
+  <body id="home-section">
+    <nav class="navigation-wrapper">
+      <h1>J.H.</h1>
+      <img src="images/bars-solid.svg" class="hamburger-icon" alt="" />
+      <img src="images/x-mark.svg" class="x-mark-icon" alt="" />
+      <ul class="list-wrapper">
+        <li class="hover-effect"><a href="#home-section"> Home</a></li>
+        <li class="hover-effect"><a href="#about-me-section"> O mně</a></li>
+        <li class="hover-effect">
+          <a href="#technology-section"> Technologie</a>
+        </li>
+        <li class="hover-effect"><a href="#project-section">Projekty</a></li>
+        <li class="hover-effect"><a href="#contact-section"> Kontakt</a></li>
+      </ul>
+
+      <ul class="hamburger-menu">
+        <li class="hover-effect"><a href="#home-section"> Home</a></li>
+        <li class="hover-effect"><a href="#about-me-section"> O mně</a></li>
+        <li class="hover-effect">
+          <a href="#technology-section"> Technologie</a>
+        </li>
+        <li class="hover-effect"><a href="#project-section">Projekty</a></li>
+        <li class="hover-effect"><a href="#contact-section"> Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="header-wrapper">
+        <p>Jmenuji se</p>
+        <h1>Jaroslav Hošovský</h1>
+        <p>a jsem <span> Junior Front-end Developer</span></p>
+        <div class="header-button-wrapper">
+          <button><a href="#contact-section">Kontakt</a></button>
+          <button>
+            <a href="images/Životopis - Jaroslav Hošovský.pdf" download
+              >Životopis</a
+            >
+          </button>
+        </div>
+      </div>
+      <img src="images/workspace.png" class="header-img" alt="" />
+    </header>
+
+    <section class="about-me-container" id="about-me-section">
+      <img src="images/About-me.jpg" alt="" />
+      <div class="about-me-text-wrapper">
+        <h1>O mně</h1>
+        <p>
+          Jsem ambiciózní junior front-end developer s vášní pro vytváření
+          moderních a uživatelsky příjemných webových stránek. Mým cílem je
+          spojit svou pečlivost a píli spolu s nabytými znalostmi, které bych
+          uplatnil při budoucím zaměstnání. Jsem odhodlaný se neustále posouvat
+          dál a učit se novým věcem, které mi pomohou v oblasti front-end
+          vývoje.
+        </p>
+      </div>
+    </section>
+
+    <section class="technology-wrapper" id="technology-section">
+      <div class="technology-headline-wrapper">
+        <h1>
+          <span>Technologie,</span> <br />
+          které ovládám
+        </h1>
+      </div>
+
+      <div class="grid-container">
+        <div class="icon-container html-handler">
+          <img src="images/html.svg" class="image-handler" alt="" />
+          <p>HTML</p>
+        </div>
+        <div class="icon-container css-handler">
+          <img src="images/css.svg" class="image-handler" alt="" />
+          <p>CSS</p>
+        </div>
+        <div class="icon-container tailwind-handler">
+          <img src="images/tailwind-css.svg" class="image-handler" alt="" />
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="icon-container javascript-handler">
+          <img src="images/javascript.svg" class="image-handler" alt="" />
+          <p>Javascript</p>
+        </div>
+        <div class="icon-container react-handler">
+          <img src="images/react.svg" class="image-handler" alt="" />
+          <p>React</p>
+        </div>
+        <div class="icon-container git-handler">
+          <img src="images/git.svg" class="image-handler" alt="" />
+          <p>Git</p>
+        </div>
+        <div class="icon-container github-handler">
+          <img src="images/github-logo.svg" class="image-handler" alt="" />
+          <p>Github</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-wrapper" id="project-section">
+      <h1 class="project-headline">Projekty</h1>
+
+      <div class="projects-container">
+        <div class="single-project">
+          <img src="images/advice-app.jpg" class="project-img-handler" alt="" />
+          <h1>Advice generator app</h1>
+          <p>HTML - CSS - REACT - API</p>
+          <div class="link-wrapper">
+            <button>
+              <a
+                href="https://github.com/JaroslavHosovsky/Advice-generator-app"
+                target="_blank"
+                >Github code</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://advice-generator-app-fm-jh.netlify.app/"
+                target="_blank"
+                >Live demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <img
+            src="images/body-mass-index-calculator.jpg"
+            class="project-img-handler"
+            alt=""
+          />
+          <h1>Body Mass Index calculator</h1>
+          <p>HTML - Tailwind CSS - JS</p>
+          <div class="link-wrapper">
+            <button>
+              <a
+                href="https://github.com/JaroslavHosovsky/Body-Mass-Index-calculator"
+                target="_blank"
+                >Github code</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://body-mass-index-calculator-fm-jh.netlify.app/"
+                target="_blank"
+                >Live demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <img
+            src="images/skilled-elearning-page.jpg"
+            class="project-img-handler"
+            alt=""
+          />
+          <h1>Skilled e-learning landing page</h1>
+          <p>HTML - CSS - Tailwind CSS</p>
+          <div class="link-wrapper">
+            <button>
+              <a
+                href="https://github.com/JaroslavHosovsky/Skilled-e-learning-landing-page"
+                target="_blank"
+                >Github code</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://skilled-e-learning-landing-page-fm-jh.netlify.app/"
+                target="_blank"
+                >Live demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <img
+            src="images/loopstudios-landing-page.jpg"
+            class="project-img-handler"
+            alt=""
+          />
+          <h1>Loopstudios landing page</h1>
+          <p>HTML - CSS - Javascript</p>
+          <div class="link-wrapper">
+            <button>
+              <a
+                href="https://github.com/JaroslavHosovsky/Complex-website"
+                target="_blank"
+                >Github code</a
+              >
+            </button>
+            <button>
+              <a href="https://loopstudios-fm-fm.netlify.app/" target="_blank"
+                >Live demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <img
+            src="images/sunnyside-agency.jpg"
+            class="project-img-handler"
+            alt=""
+          />
+          <h1>Sunnyside agency landing page</h1>
+          <p>HTML - Tailwind CSS - JS</p>
+          <div class="link-wrapper">
+            <button>
+              <a
+                href="https://github.com/JaroslavHosovsky/Sunnyside-agency-landing-page"
+                target="_blank"
+                >Github code</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://sunnyside-agency-landing-page-fm-jh.netlify.app/"
+                target="_blank"
+                >Live demo</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <img
+            src="images/Intro component with sign-up form.jpg"
+            class="project-img-handler"
+            alt=""
+          />
+          <h1>Intro component with sign-up form</h1>
+          <p>HTML - Tailwind CSS - JS</p>
+          <div class="link-wrapper">
+            <button>
+              <a
+                href="https://github.com/JaroslavHosovsky/Intro-component-with-sign-up-form"
+                target="_blank"
+                >Github code</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://intro-component-with-sign-up-form-jh.netlify.app/"
+                target="_blank"
+                >Live demo</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section-wrapper" id="contact-section">
+      <h1>Kontakty</h1>
+      <div class="contact-containers-divider">
+        <img
+          src="images/contact-section.png"
+          class="contact-section-img"
+          alt=""
+        />
+        <div class="contact-info-wrapper">
+          <div class="contact-info-container">
+            <img src="images/email.png" alt="" />
+            <p>j.hosovsky@seznam.cz</p>
+          </div>
+
+          <div class="contact-info-container">
+            <img src="images/phone.png" alt="" />
+            <p>+420 607 820 664</p>
+          </div>
+
+          <div class="contact-info-container">
+            <img src="images/github-contact.png" alt="" />
+            <a href="https://github.com/JaroslavHosovsky" target="_blank"
+              >Github</a
+            >
+          </div>
+
+          <div class="contact-info-container">
+            <img src="images/linkedin-contact.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/jaroslav-ho%C5%A1ovsk%C3%BD/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

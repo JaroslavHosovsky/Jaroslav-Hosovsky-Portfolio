@@ -1,0 +1,771 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 70px;
+}
+
+/* Navbar section - začátek */
+
+.navigation-wrapper {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 65px;
+  padding: 35px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.navigation-wrapper h1 {
+  padding: 5px;
+  font-weight: 800;
+  color: #061e4c;
+  border: 1px solid #061e4c;
+}
+
+.hamburger-icon {
+  width: 20px;
+}
+.x-mark-icon {
+  width: 20px;
+  display: none;
+}
+
+.list-wrapper {
+  display: none;
+  list-style: none;
+  color: #061e4c;
+}
+
+.list-wrapper li {
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.list-wrapper a {
+  text-decoration: none;
+  color: #061e4c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hover-effect::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #061e4c;
+  transition: 300ms;
+}
+
+.hover-effect:hover::after {
+  width: 100%;
+}
+
+/* Hamburger manu - začátek */
+.hamburger-menu {
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.hamburger-menu li {
+  margin: 12px auto;
+}
+
+.hamburger-menu a {
+  text-decoration: none;
+  color: #061e4c;
+  font-weight: bold;
+}
+/* Hamburger manu - konec */
+
+/* Navbar section - konec */
+
+/* Header section - začátek */
+header {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #e5e4e5;
+}
+
+.header-wrapper {
+  width: 85%;
+  margin: auto;
+  color: #061e4c;
+}
+
+.header-wrapper p {
+  color: #348de2;
+}
+
+.header-wrapper h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header-wrapper span {
+  color: #061e4c;
+  font-weight: 600;
+}
+
+.header-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header-wrapper button {
+  padding: 7px 12px;
+  margin-top: 25px;
+  border-radius: 15px;
+  border: none;
+  background-color: #348de2;
+  color: #e5e5e5;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.header-wrapper button a {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+.header-wrapper button:hover {
+  border: none;
+  background-color: #061e4c;
+
+  transition: all 300ms ease-in-out;
+}
+.header-img {
+  position: absolute;
+  max-width: 200px;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Header section - konec */
+
+/* About me section - začátek */
+
+.about-me-container {
+  width: 85%;
+  margin: 50px auto 120px auto;
+  position: relative;
+}
+
+.about-me-container img {
+  width: 175px;
+  height: auto;
+  position: absolute;
+  bottom: -68px;
+  right: -25px;
+  /* border-radius: 50%; */
+}
+
+.about-me-text-wrapper {
+  background-color: #348de2;
+  color: #fff;
+  padding: 25px 15px 85px 15px;
+  border-radius: 15px;
+}
+
+.about-me-container h1 {
+  color: #061e4c;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* About me section - konec */
+
+/* Technology section - začátek */
+.technology-wrapper {
+  width: 85%;
+  margin: 50px auto;
+}
+.technology-wrapper h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #061e4c;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.technology-wrapper span {
+  color: #348de2;
+  font-size: 34px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px 10px;
+}
+.icon-container:last-child {
+  grid-column: span 2;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container p {
+  margin-top: 15px;
+  font-weight: 600;
+}
+.image-handler {
+  width: 50px;
+  height: auto;
+}
+/* Technology section - konec */
+
+/* Projects section - začátek */
+.projects-wrapper {
+  background-color: #f2f4ff;
+}
+
+.projects-container {
+  width: 85%;
+  margin: auto;
+  padding: 50px 0;
+}
+.project-headline {
+  font-size: 34px;
+  color: #061e4c;
+  text-decoration: underline #348de2;
+  width: 85%;
+  padding-top: 35px;
+  margin: 35px auto;
+}
+.project-img-handler {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.single-project {
+  margin-bottom: 45px;
+  border-bottom: 3px solid #e5e5e5;
+}
+.single-project:last-child {
+  border-bottom: none;
+}
+.single-project h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #348de2;
+}
+.single-project p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5e6e85;
+  margin-bottom: 40px;
+}
+.single-project button {
+  margin-right: 15px;
+  padding: 8px 14px;
+  background-color: #348de2;
+  border-radius: 25px;
+  border: none;
+}
+.single-project a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.single-project button:hover {
+  background-color: #061e4c;
+  transition: all 200ms ease-in-out;
+}
+.link-wrapper {
+  margin-bottom: 45px;
+}
+
+/* Projects section - konec */
+
+/* Contact section - začátek */
+.contact-section-wrapper {
+  width: 85%;
+  margin: 50px auto;
+}
+.contact-section-wrapper h1 {
+  font-size: 34px;
+  color: #061e4c;
+  padding: 10px 0 0 10px;
+  border-top: 2px solid #348de2;
+  border-left: 2px solid #348de2;
+  border-top-left-radius: 10px;
+  max-width: 158px;
+}
+.contact-section-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-info-wrapper {
+  color: #061e4c;
+  font-weight: bold;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-info-container img {
+  width: 15%;
+  height: auto;
+}
+
+.contact-info-container a {
+  text-decoration: none;
+  color: #061e4c;
+  cursor: pointer;
+}
+/* Contact section - konec */
+
+@media only screen and (max-width: 325px) {
+  .single-project button {
+    margin-bottom: 15px;
+  }
+}
+
+/* Header image - začátek */
+@media only screen and (min-width: 490px) {
+  .header-img {
+    max-width: 255px;
+  }
+}
+
+@media only screen and (min-width: 590px) {
+  .header-img {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .header-img {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .header-img {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header-img {
+    max-width: 430px;
+    right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .header-img {
+    max-width: 485px;
+    right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .header-img {
+    max-width: 530px;
+    right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .header-img {
+    max-width: 555px;
+    right: 85px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header-img {
+    max-width: 590px;
+    right: 135px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .header-img {
+    max-width: 620px;
+    right: 190px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .header-img {
+    max-width: 630px;
+    right: 285px;
+  }
+}
+
+/* Header image - konec */
+
+/* About me image - začátek */
+@media only screen and (min-width: 347px) {
+  .about-me-container img {
+    bottom: -103px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .about-me-container img {
+    bottom: -93px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .about-me-container img {
+    width: 240px;
+    right: 45px !important;
+    top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about-me-container img {
+    width: 240px;
+    right: 70px !important;
+    top: 30px;
+  }
+}
+
+/* About me image - konec */
+
+@media only screen and (min-width: 768px) {
+  /* Header section - začátek */
+
+  .navigation-wrapper {
+    padding: 35px 95px 35px 95px;
+  }
+
+  .hamburger-icon {
+    display: none !important;
+  }
+
+  .list-wrapper {
+    display: flex;
+  }
+
+  .header-wrapper {
+    width: 75%;
+  }
+
+  /* Header section - konec */
+
+  /* About me section - začátek */
+
+  @media only screen and (min-width: 768px) {
+    .about-me-container {
+      width: 75%;
+    }
+
+    .about-me-text-wrapper {
+      padding: 35px;
+      height: 300px;
+    }
+
+    .about-me-container img {
+      width: 200px;
+      right: 10px;
+      top: 75px;
+    }
+
+    .about-me-text-wrapper p {
+      width: 70%;
+      line-height: 22px;
+    }
+  }
+
+  /* About me section - konec */
+
+  /* Technology section - začátek */
+
+  .technology-wrapper {
+    width: 75%;
+  }
+
+  .technology-wrapper h1 {
+    text-align: left;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px 10px;
+  }
+
+  .icon-container:last-child {
+    grid-column: span 3;
+  }
+
+  /* Technology section - konec */
+
+  /* Project section - začátek */
+
+  .projects-wrapper h1 {
+    width: 75%;
+    margin: auto;
+    padding: 50px 0 25px 0;
+    font-size: 40px;
+  }
+
+  .projects-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px 20px;
+  }
+
+  .project-img-handler {
+    margin-bottom: 0;
+  }
+
+  .single-project {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .single-project h1 {
+    margin: 0;
+    font-size: 24px;
+    max-width: 230px;
+  }
+  /* Project section - konec */
+
+  /* Contact section - začátek */
+
+  .contact-section-wrapper {
+    width: 75%;
+  }
+
+  .contact-section-wrapper h1 {
+    max-width: 158px;
+  }
+
+  .contact-containers-divider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 75px;
+  }
+
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .contact-info-container img {
+    width: 40px;
+  }
+  /* Contact section - konec */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Header section - začátek */
+
+  header {
+    height: 700px;
+  }
+
+  .header-wrapper {
+    width: 70%;
+  }
+
+  .header-wrapper p {
+    font-size: 26px;
+  }
+
+  .header-wrapper h1 {
+    font-size: 40px;
+  }
+
+  .header-wrapper button {
+    padding: 10px 20px;
+    border-radius: 22px;
+  }
+
+  .header-wrapper button a {
+    font-size: 18px;
+  }
+
+  /* Header section - konec */
+
+  /* About me section - začátek */
+
+  @media only screen and (min-width: 1024px) {
+    .about-me-container {
+      width: 70%;
+    }
+
+    .about-me-container img {
+      width: 240px;
+      right: 10px;
+      top: 30px;
+    }
+
+    .about-me-text-wrapper {
+      padding: 35px;
+      height: 300px;
+    }
+
+    .about-me-text-wrapper p {
+      line-height: 24px;
+    }
+  }
+
+  /* About me section - konec */
+
+  /* Technology section - začátek */
+
+  .technology-wrapper {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .technology-headline-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .technology-wrapper h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .technology-wrapper span {
+    font-size: 50px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px 0px;
+  }
+
+  .html-handler {
+    grid-column: span 3;
+  }
+
+  .css-handler {
+    grid-column: span 3;
+  }
+
+  .tailwind-handler {
+    grid-column: span 3;
+  }
+
+  .javascript-handler {
+    grid-column: span 3;
+  }
+
+  .react-handler {
+    grid-column: span 4;
+  }
+  .git-handler {
+    grid-column: span 4;
+  }
+  .github-handler {
+    grid-column: span 4;
+  }
+
+  .icon-container:last-child {
+    grid-column: span 4;
+  }
+  /* Technology section - konec */
+
+  /* Project section - začátek */
+
+  .projects-wrapper h1 {
+    width: 70%;
+  }
+
+  .projects-container {
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 33px 33px;
+  }
+
+  .single-project h1 {
+    font-size: 18px;
+    max-width: 152px;
+  }
+
+  .single-project p {
+    font-size: 15px;
+  }
+
+  .single-project a {
+    font-size: 14px;
+  }
+
+  .single-project button:first-child {
+    margin-right: 8px;
+  }
+
+  .single-project button:last-child {
+    margin-right: 0;
+  }
+  /* Project section - konec */
+
+  /* Contact section - začátek */
+
+  .contact-section-wrapper {
+    width: 70%;
+  }
+
+  .contact-info-wrapper {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Contact section - konec */
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-me-text-wrapper p {
+    width: 70%;
+    line-height: 28px;
+    font-size: 20px;
+  }
+}
