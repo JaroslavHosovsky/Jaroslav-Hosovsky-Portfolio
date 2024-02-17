@@ -1,15 +1,15 @@
 // Hamburger menu
-const openButton = document.querySelector(".hamburger-icon");
-const closeButton = document.querySelector(".x-mark-icon");
+const menuBtn = document.querySelector(".menu-btn");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-
-function toggleMenu() {
-  const isOpen = closeButton.style.display === "block";
-
-  openButton.style.display = isOpen ? "block" : "none";
-  closeButton.style.display = isOpen ? "none" : "block";
-  hamburgerMenu.style.display = isOpen ? "none" : "flex";
-}
-
-openButton.addEventListener("click", toggleMenu);
-closeButton.addEventListener("click", toggleMenu);
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    hamburgerMenu.style.top = "65px";
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    hamburgerMenu.style.top = "-425px";
+    menuOpen = false;
+  }
+});
